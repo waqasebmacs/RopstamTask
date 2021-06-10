@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activties.ProductDetails">
+
+
+    <ImageView
+        android:id="@+id/backarrow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/product_IV"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/backarrow_icon" />
+
+    <TextView
+        android:id="@+id/back_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:text="@string/back"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/backarrow_icon"
+        app:layout_constraintStart_toEndOf="@+id/backarrow_icon"
+        app:layout_constraintTop_toTopOf="@+id/backarrow_icon" />
+
+    <ImageView
+        android:id="@+id/product_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/product_name_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/backarrow_icon"
+        app:layout_constraintTop_toBottomOf="@+id/back_TV"
+        android:background="@drawable/sofa_b" />
+
+
+    <TextView
+        android:id="@+id/product_name_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_name"
+        android:textSize="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        android:textStyle="bold"
+
+        android:textColor="@color/appcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_IV"
+        app:layout_constraintBottom_toTopOf="@+id/ratebar_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/ratebar_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="@string/ratingbar_title"
+        android:textColor="@color/white"
+        android:padding="@dimen/_3sdp"
+        android:background="@drawable/ratingstar_shape"
+        android:backgroundTint="@color/yellowcolor"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toStartOf="@+id/ratingbar_TV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_TV"
+        />
+
+    <TextView
+        android:id="@+id/ratingbar_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rateing_Review"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratebar_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratebar_TV"
+        app:layout_constraintTop_toTopOf="@+id/ratebar_TV" />
+
+
+    <TextView
+        android:id="@+id/rant_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rent_title"
+        android:textColor="@color/appcolor"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratebar_TV"
+        />
+
+    <TextView
+        android:id="@+id/rentprice_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rentpriceinuro_title"
+        android:textSize="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textColor="@color/appcolor"
+        app:layout_constraintBottom_toBottomOf="@+id/rant_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratebar_TV" />
+
+
+
+    <TextView
+        android:id="@+id/refandable_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="@string/refanddeposit_price"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/getofferconst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rant_TV"
+        />
+
+
+    <TextView
+        android:id="@+id/refandprice_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/deposit_price"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/refandable_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rentprice_TV"
+        app:layout_constraintTop_toTopOf="@+id/refandable_TV" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/getofferconst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/top_img"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/productlayout"
+        app:layout_constraintTop_toBottomOf="@+id/refandable_TV">
+
+        <TextView
+            android:id="@+id/refundofferTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/refundoffer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/viewall_TV"
+            app:layout_constraintEnd_toStartOf="@+id/offerIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/viewall_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/viewall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/offerIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/refundofferTV" />
+
+        <ImageView
+            android:id="@+id/offerIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/refundofferTV"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sofa_a" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/productsize_layotu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productlayout"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/getofferconst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </include>
+
+    <TextView
+        android:id="@+id/selecttenurTV"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:text="@string/selecttenure"
+        android:textColor="@color/appcolor"
+        android:padding="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/includelayout"
+        app:layout_constraintTop_toBottomOf="@+id/productlayout"
+        />
+
+    <EditText
+        android:id="@+id/selecttenurET"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/curved_shape"
+        app:layout_constraintStart_toEndOf="@+id/selecttenurTV"
+        android:hint="@string/input_tenure"
+        android:maxLines="1"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/appcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/selecttenurTV"
+        />
+
+    <include
+        android:id="@+id/includelayout"
+        layout="@layout/addcart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

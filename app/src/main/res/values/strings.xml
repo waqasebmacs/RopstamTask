@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RopstamApplication</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categary_title">Category_Title</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_products">Products</string>
+    <string name="menu_carts">Carts</string>
+    <string name="menu_profile">Profile</string>
+    <string name="back">Back</string>
+    <string name="product_name">Sofa Baleria</string>
+    <string name="ratingbar_title">4.5☆</string>
+    <string name="rateing_Review">1034 Ratings | 104 Reviews</string>
+    <string name="rent_title">Rent</string>
+    <string name="rentpriceinuro_title">₹ 799/Month</string>
+    <string name="refanddeposit_price">Refandable Deposit</string>
+    <string name="deposit_price">₹ 1899</string>
+    <string name="rentickle">Rentickle</string>
+    <string name="rentickle_spinner">Gurgaan</string>
+    <string name="searchproducts" >Search Category</string>
+    <string name="ourcategory">Our Categories</string>
+    <string name="trending_product">Trending Products</string>
+    <string name="refundoffer">Get 10% off on this Product by \n using coupon code RENTIO</string>
+    <string name="viewall">View All Others</string>
+    <string name="selecttenure">Select Tenure</string>
+    <string name="input_tenure">Please Enter your tenure</string>
+    <string name="rent">Rent</string>
+    <string name="rentmonth">₹ 5039 fro 36 Months</string>
+    <string name="addcart_button">Add to Cart</string>
+    <string name="selectsize">Select Size</string>
+    <string-array name="rentickle_array">
+        <item>Gurgaan</item>
+        <item>Category</item>
+        <item>Product</item>
+    </string-array>
+
+
+
+</resources>

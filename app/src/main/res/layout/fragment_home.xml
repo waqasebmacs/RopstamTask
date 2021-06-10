@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_img"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/parentconst"
+        app:layout_constraintBottom_toTopOf="@+id/ourcategoryTV"
+        android:paddingBottom="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rentickle_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rentickle"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_Rencticke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_Rencticke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:entries="@array/rentickle_array"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/productsearch_ET"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentickle_TV" />
+
+        <EditText
+            android:id="@+id/productsearch_ET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/curved_shape"
+            android:drawableLeft="@drawable/search_icon"
+            android:ems="10"
+
+            android:textSize="@dimen/_12sdp"
+            android:hint="@string/searchproducts"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/spinner_Rencticke"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Rencticke" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/ourcategoryTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ourcategory"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentconst"
+        app:layout_constraintBottom_toTopOf="@+id/categoryrecyvlerView"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryrecyvlerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F6F1F1"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/ourcategoryTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/trending_productTV"
+        app:layout_constraintStart_toStartOf="@+id/ourcategoryTV" />
+
+
+    <TextView
+        android:id="@+id/trending_productTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/trending_product"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:padding="@dimen/_5sdp"
+
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryrecyvlerView"
+        app:layout_constraintBottom_toTopOf="@+id/trendingrecyclerView"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trendingrecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/trending_productTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/trending_productTV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
